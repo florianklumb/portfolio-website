@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="de">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="light" name="color-scheme"/>
+  <title>
+   SoliBU: Bedarf auf Ukrainisch, Hilfe auf Deutsch · Florian Klumb
+  </title>
+  <script defer="" src="assets/site.js">
+  </script>
+  <meta content="Case Study SoliBU: Ein zweisprachiger Bestellprozess verbindet ukrainische Geflüchtete, Freiwillige und ein Sachspendenlager." name="description"/>
+  <link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="assets/vendor/bulma-1.0.4.min.css" rel="stylesheet"/>
+  <link href="assets/portfolio.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <a class="skip-link" href="#inhalt">
+   Zum Inhalt
+  </a>
+  <div id="portfolio">
+   <header class="section py-5">
+    <div class="container is-max-desktop site-nav">
+     <a class="brand" href="index.html">
+      Florian Klumb
+      <span class="brand-description">
+       · Digitale Produkte &amp; Prozesse
+      </span>
+     </a>
+     <nav aria-label="Hauptnavigation">
+      <a href="index.html#portfolio-projekte">
+       Projekte
+      </a>
+      <a href="index.html#portfolio-profil">
+       Profil
+      </a>
+     </nav>
+    </div>
+   </header>
+   <main class="section pt-5" id="inhalt" tabindex="-1">
+    <div class="container is-max-desktop">
+     <section class="case-header block">
+      <a class="back-link" href="index.html#portfolio-projekte">
+       ← Zur Projektübersicht
+      </a>
+      <div class="eyebrow">
+       Case Study · Solidarität Bonn Ukraine
+      </div>
+      <h1 class="title is-1 is-size-2-mobile is-spaced">
+       Bedarf auf Ukrainisch.
+       <br/>
+       Hilfe auf Deutsch organisiert.
+      </h1>
+      <p class="subtitle is-5">
+       Wie ich einen mobil zugänglichen, zweisprachigen Bestellprozess für Sachspenden entwickelte und die ehrenamtliche Abholung und Übergabe mitorganisierte.
+      </p>
+     </section>
+     <section aria-label="Das Projekt auf einen Blick" class="notification case-summary">
+      <div class="columns is-variable is-5">
+       <article class="column">
+        <div class="eyebrow">
+         Herausforderung
+        </div>
+        <h3 class="title is-5 is-family-primary">
+         Hilfe über Sprachgrenzen.
+        </h3>
+        <p>
+         Geflüchtete benötigten Alltagsgegenstände. Die Lagerformulare und die Organisation der Abholung waren auf Deutsch.
+        </p>
+       </article>
+       <article class="column">
+        <div class="eyebrow">
+         Meine Verantwortung
+        </div>
+        <h3 class="title is-5 is-family-primary">
+         Vom Bedarf zur Übergabe.
+        </h3>
+        <p>
+         Digitale Bedarfserfassung, automatische PDF-Erstellung und ein gemeinsamer Ablauf für die Freiwilligen.
+        </p>
+       </article>
+       <article class="column">
+        <div class="eyebrow">
+         Wirkung
+        </div>
+        <h3 class="title is-5 is-family-primary">
+         Mehrere Dutzend Bedarfsmeldungen bearbeitet.
+        </h3>
+        <p>
+         Ein gemeinsamer Ablauf unterstützte die Arbeit der Freiwilligen und ließ sich bei veränderter Verfügbarkeit anpassen.
+        </p>
+       </article>
+      </div>
+     </section>
+     <nav aria-label="Abschnitte" class="section-nav">
+      <a href="#soli-zugang">
+       Ausgangslage
+      </a>
+      <a href="#soli-nutzerorientierung">
+       Anforderungen
+      </a>
+      <a href="#soli-ablauf">
+       Umsetzung
+      </a>
+      <a href="#soli-einfuehrung">
+       Erprobung &amp; Weiterentwicklung
+      </a>
+      <a href="#soli-wirkung">
+       Wirkung
+      </a>
+      <a href="#soli-learnings">
+       Learnings
+      </a>
+     </nav>
+     <section class="case-section" id="soli-zugang">
+      <div class="columns is-variable is-6">
+       <div class="column is-one-third">
+        <div class="eyebrow">
+         Ausgangslage
+        </div>
+        <h2 class="title is-4">
+         Den Zugang zur Hilfe ermöglichen.
+        </h2>
+       </div>
+       <div class="content column">
+        <p>
+         Nach Beginn des russischen Angriffskriegs kamen viele Geflüchtete aus der Ukraine nach Deutschland und auch nach Bonn. Häufig fehlten Kleidung, Hygieneartikel, Küchenutensilien oder Schulmaterial. Von März bis September 2022 engagierte ich mich ehrenamtlich bei der Solidaritätsinitiative Bonn-Ukraine (SoliBU), um die Unterstützung vor Ort mitzugestalten.
+        </p>
+        <p>
+         Das
+         <strong>
+          Zentrallager Sachspenden Bonn (ZeSaBo)
+         </strong>
+         stellte solche Güter bereit. Geflüchtete konnten dort nicht selbst abholen. SoliBU musste deshalb Bedarfserfassung, Auswahl und Übergabe durch registrierte Freiwillige miteinander verbinden.
+        </p>
+        <p>
+         Die deutschen PDF-Bögen des Lagers boten eine Grundlage für die Bedarfserfassung. Für ukrainischsprachige Menschen, die häufig
+         <strong>
+          nur ein Smartphone
+         </strong>
+         zur Verfügung hatten, brauchten wir einen anderen Zugang.
+        </p>
+       </div>
+      </div>
+     </section>
+     <section class="case-section" id="soli-nutzerorientierung">
+      <div class="columns is-variable is-6">
+       <div class="column is-one-third">
+        <div class="eyebrow">
+         Anforderungen &amp; Nutzerorientierung
+        </div>
+        <h2 class="title is-4">
+         Für beide Seiten nutzbar machen.
+        </h2>
+       </div>
+       <div class="content column">
+        <p>
+         Geflüchtete sollten ihren Bedarf verständlich mitteilen können. Freiwillige brauchten verlässliche Angaben für Auswahl und Übergabe. Daraus ergaben sich drei zentrale Anforderungen:
+        </p>
+        <p>
+         <strong>
+          Per Smartphone erreichbar.
+         </strong>
+         Die Bedarfserfassung musste ohne Computer und ohne das Bearbeiten eines PDF-Dokuments funktionieren.
+        </p>
+        <p>
+         <strong>
+          Sprachlich verständlich.
+         </strong>
+         Ukrainische Begriffe mussten verlässlich sein. Ebenso wichtig war eine verständliche Erklärung des Angebots und des Bestellablaufs.
+        </p>
+        <p>
+         <strong>
+          Für Freiwillige direkt bearbeitbar.
+         </strong>
+         Die Angaben sollten auf Deutsch für die Abholung vorliegen, ohne dass jemand Artikel und Mengen erneut abschreiben musste.
+        </p>
+        <p>
+         Diese Anforderungen richteten sich an den Bedingungen beider Gruppen aus und wurden im praktischen Einsatz weiter geschärft.
+        </p>
+       </div>
+      </div>
+     </section>
+     <section class="case-section" id="soli-ablauf">
+      <div class="columns is-variable is-6">
+       <div class="column is-one-third">
+        <div class="eyebrow">
+         Umsetzung
+        </div>
+        <h2 class="title is-4">
+         Einen gemeinsamen Ablauf entwickeln.
+        </h2>
+       </div>
+       <div class="content column">
+        <p>
+         Ich erwog zunächst Google Forms; dabei wäre zusätzliche Übertragungsarbeit entstanden. Unsere ukrainische Ansprechpartnerin wies außerdem auf Ungenauigkeiten automatischer Browserübersetzungen hin.
+        </p>
+        <p>
+         Ich entschied mich für
+         <strong>
+          Jotform
+         </strong>
+         und baute kategorienbezogene Formulare auf Basis der Lager-PDFs. Ukrainische Übersetzungen ließ ich von unserer Ansprechpartnerin prüfen und arbeitete die Korrekturen ein. Ein ukrainischer Einführungstext erklärte Angebot und Bestellablauf.
+        </p>
+        <p>
+         <strong>
+          Strukturierte Angaben aus dem ukrainischen Formular wurden in das deutsche Bestell-PDF übernommen.
+         </strong>
+         Freitext und individuelle Rückfragen benötigten bei Bedarf zusätzliche Übersetzung.
+        </p>
+        <p>
+         Den gesamten Ablauf gestaltete ich mit einer Ansprechpartnerin von SoliBU – vom ersten Kontakt bis zur Organisation von Abholung und Übergabe:
+        </p>
+       </div>
+      </div>
+      <div class="box workflow">
+       <div class="eyebrow">
+        Von der Anfrage zur Sachspende
+       </div>
+       <div class="workflow-step">
+        <span class="step-marker">
+         01
+        </span>
+        <div class="step-body">
+         <span class="step-actor">
+          Geflüchtete &amp; Freiwillige · persönlich
+         </span>
+         <h3 class="title is-5 is-family-primary">
+          Kontakt aufnehmen &amp; Formularlinks erhalten
+         </h3>
+         <p>
+          Telegram und die bestehende Website führen zum gemeinsamen E-Mail-Postfach. Eine ukrainische Vorlage enthält die passenden Links.
+         </p>
+        </div>
+       </div>
+       <div class="workflow-step">
+        <span class="step-marker">
+         02
+        </span>
+        <div class="step-body">
+         <span class="step-actor">
+          Geflüchtete · Eingabe
+         </span>
+         <h3 class="title is-5 is-family-primary">
+          Bedarf auf Ukrainisch erfassen
+         </h3>
+         <p>
+          Artikel und Mengen im Formular auswählen. Das deutsche PDF ist bereits während der Eingabe als Vorschau verfügbar.
+         </p>
+        </div>
+       </div>
+       <div class="workflow-step is-automatic">
+        <span class="step-marker">
+         <svg aria-hidden="true" class="symbol" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+          <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+          </path>
+         </svg>
+        </span>
+        <div class="step-body">
+         <span class="step-actor">
+          Jotform · automatisch nach dem Absenden
+         </span>
+         <h3 class="title is-5 is-family-primary">
+          Bestellübersicht &amp; deutsches PDF versenden
+         </h3>
+         <p>
+          Die E-Mail mit ukrainischer Übersicht und deutschem PDF-Anhang geht an das gemeinsame Postfach.
+         </p>
+        </div>
+       </div>
+       <div class="workflow-step">
+        <span class="step-marker">
+         03
+        </span>
+        <div class="step-body">
+         <span class="step-actor">
+          Freiwillige · Koordination
+         </span>
+         <h3 class="title is-5 is-family-primary">
+          Bedarfsmeldungen übernehmen &amp; bündeln
+         </h3>
+         <p>
+          Gmail-Labels zeigen den Bearbeitungsstand. Vorlagen unterstützen Rückfragen und Terminabsprachen.
+         </p>
+        </div>
+       </div>
+       <div class="workflow-step is-final">
+        <span class="step-marker">
+         04
+        </span>
+        <div class="step-body">
+         <div class="step-intro">
+         <span class="step-actor">
+          Übergabe · zwei mögliche Wege
+         </span>
+         <h3 class="title is-5 is-family-primary">
+          Sachspenden bereitstellen &amp; übergeben
+         </h3>
+         </div>
+         <div class="delivery-options">
+          <article class="delivery-option">
+           <span class="step-actor">
+            Freiwillige · regulärer Ablauf
+           </span>
+           <h3 class="title is-5 is-family-primary">
+            Abholen &amp; übergeben
+           </h3>
+           <p>
+            Artikel mit dem deutschen PDF im Lager zusammenstellen und am vereinbarten Treffpunkt übergeben.
+           </p>
+          </article>
+          <article class="delivery-option">
+           <span class="step-actor">
+            ZeSaBo · später ergänzte Alternative
+           </span>
+           <h3 class="title is-5 is-family-primary">
+            Kommissionieren &amp; liefern lassen
+           </h3>
+           <p>
+            Geeignete Bestellungen bündeln und mit Lieferadressen an das Lager übermitteln.
+           </p>
+          </article>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="evidence-heading">
+       <strong>
+        Von der Eingabe zum Arbeitsdokument
+       </strong>
+       <span class="muted">
+        anklicken zum Vergrößern
+       </span>
+      </div>
+      <div class="evidence-pair">
+       <figure>
+        <button aria-label="Ukrainischen Formularausschnitt öffnen" class="image-trigger--mobile image-trigger" data-image-open="" data-image-portrait="" type="button">
+         <img alt="Ausschnitt der ukrainischen mobilen Bedarfserfassung" src="assets/ausschnitt-der-ukrainischen-mobilen-bedarfserfassung-50e8f81.webp" style="object-fit: contain;"/>
+        </button>
+        <figcaption>
+         <strong>
+          Eingabe auf Ukrainisch
+         </strong>
+         · Mobile Formularansicht: Kontaktdaten und Beginn der Artikelauswahl.
+        </figcaption>
+       </figure>
+       <div aria-hidden="true" class="evidence-arrow">
+        <svg aria-hidden="true" class="symbol" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+         <path d="M5 12h14">
+         </path>
+         <path d="m12 5 7 7-7 7">
+         </path>
+        </svg>
+        <span>
+         Strukturierte
+         <br/>
+         Angaben
+         <br/>
+         übernehmen
+        </span>
+       </div>
+       <figure>
+        <button aria-label="Deutsches Bestell-PDF öffnen" class="image-trigger--pdf image-trigger" data-image-open="" type="button">
+         <img alt="Deutsches ZeSaBo-Bestellformular mit automatisch eingetragenen Mengen" src="assets/deutsches-zesabo-bestellformular-mit-automatisch-eingetragenen-me-59f6956.webp"/>
+        </button>
+        <figcaption>
+         <strong>
+          Deutsches Bestell-PDF
+         </strong>
+         · Ein ausgefülltes Beispiel für die Abholung – ohne erneutes Abschreiben der Mengen.
+        </figcaption>
+       </figure>
+      </div>
+      <p class="help note">
+       Die Ansichten zeigen den Zusammenhang zwischen Eingabe und Ausgabe; sie zeigen nicht denselben ausgefüllten Bestellvorgang.
+      </p>
+      <details class="extra-evidence">
+       <summary>
+        Weitere Einblicke: deutsche Formularansicht, Kommunikation &amp; Einführung
+       </summary>
+       <div class="columns evidence-gallery">
+        <div class="column">
+         <figure>
+          <button aria-label="Deutschen Formularausschnitt öffnen" class="image-trigger--mobile image-trigger" data-image-open="" data-image-portrait="" type="button">
+           <img alt="Ausschnitt der deutschen mobilen Bedarfserfassung" src="assets/ausschnitt-der-deutschen-mobilen-bedarfserfassung-8498dd7.webp"/>
+          </button>
+          <figcaption>
+           <strong>
+            Die deutsche Formularversion
+           </strong>
+           · Dieselben Kategorien in der zweiten Sprache.
+          </figcaption>
+         </figure>
+        </div>
+        <div class="column">
+         <figure>
+          <button aria-label="Gmail-Vorlagen vergrößern" class="image-trigger" data-image-open="" type="button">
+           <img alt="Gmail-Menü mit Vorlagen für Begrüßung und Abholtermin" src="assets/gmail-men-mit-vorlagen-f-r-begr-ung-und-abholtermin-f7cd267.webp"/>
+          </button>
+          <figcaption>
+           <strong>
+            Kommunikation
+           </strong>
+           · Vorlagen für den Einstieg und die Übergabe.
+          </figcaption>
+         </figure>
+        </div>
+        <div class="column">
+         <figure>
+          <button aria-label="Workflow-Folie der Einführung vergrößern" class="image-trigger" data-image-open="" type="button">
+           <img alt="Folie 4: Workflow – Idealfall" src="assets/workflow-idealfall-25d9f4c.webp"/>
+          </button>
+          <figcaption>
+           <strong>
+            Einführung für Freiwillige
+           </strong>
+           · Workflow-Folie aus meinem 13-seitigen Foliensatz zur Einführung der Freiwilligen, 30. Mai 2022.
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+      </details>
+     </section>
+     <section class="case-section" id="soli-einfuehrung">
+      <div class="columns is-variable is-6">
+       <div class="column is-one-third">
+        <div class="eyebrow">
+         Erprobung &amp; Weiterentwicklung
+        </div>
+        <h2 class="title is-4">
+         Im Einsatz lernen und nachschärfen.
+        </h2>
+       </div>
+       <div class="content column">
+        <p>
+         Die erste Bestellung begleitete ich
+         <strong>
+          von der Eingabe bis zur Auslieferung selbst
+         </strong>. Damit erprobte ich die Übergänge zwischen digitaler Erfassung und praktischer Hilfe.
+        </p>
+        <p>
+         Ich übernahm die Kommunikation mit interessierten Freiwilligen und bereitete eine
+         <strong>
+          Einführung in den gesamten Ablauf
+         </strong>
+         vor: Registrierung beim Lager, Bearbeitung der Meldungen, Nutzung der Vorlagen und Abholung.
+        </p>
+        <p>
+         Im Betrieb passte ich den Ablauf weiter an:
+        </p>
+        <p>
+         <strong>
+          Bedürfnisse genauer erfassen.
+         </strong>
+         Mengen und Größen allein reichten zur Auswahl passender Kleidung nicht immer aus. Ich ergänzte ein Freifeld für Alter, Passform und persönliche Wünsche.
+        </p>
+        <p>
+         <strong>
+          Kontakt vor Ort erleichtern.
+         </strong>
+         Namen und Telefonnummern auf den PDFs halfen den Freiwilligen bei Rückfragen und bei Schwierigkeiten am Treffpunkt.
+        </p>
+        <p>
+         <strong>
+          Lieferung anders organisieren.
+         </strong>
+         Als im Sommer weniger Freiwillige verfügbar waren, vereinbarte ich mit ZeSaBo die Bündelung geeigneter Bestellungen und die Nutzung des Lieferdienstes. Dafür ergänzte ich Lieferadressen auf den Formularen.
+        </p>
+       </div>
+      </div>
+     </section>
+     <section class="case-section" id="soli-wirkung">
+      <div class="eyebrow">
+       Beobachtete Wirkung
+      </div>
+      <h2 class="title is-3">
+       Was dadurch möglich wurde.
+      </h2>
+      <div class="columns is-multiline">
+       <div class="column is-half">
+        <article class="impact-item">
+         <h3 class="title is-5 is-family-primary">
+          Mehrere Dutzend Bedarfsmeldungen
+         </h3>
+         <p>
+          Der Ablauf wurde für Kleidung, Hygieneartikel, Haushalts- und Küchenutensilien sowie Kita-, Schul- und Bürobedarf genutzt.
+         </p>
+        </article>
+       </div>
+       <div class="column is-half">
+        <article class="impact-item">
+         <h3 class="title is-5 is-family-primary">
+          Keine doppelte Erfassung
+         </h3>
+         <p>
+          Die automatische PDF-Erstellung ersparte das Abschreiben strukturierter Angaben in die deutschen Lagerformulare.
+         </p>
+        </article>
+       </div>
+       <div class="column is-half">
+        <article class="impact-item">
+         <h3 class="title is-5 is-family-primary">
+          Zusammenarbeit im Ehrenamt
+         </h3>
+         <p>
+          Rund sechs Freiwillige waren eingebunden. Vorlagen und eine dokumentierte Einführung unterstützten die gemeinsame Arbeit.
+         </p>
+        </article>
+       </div>
+       <div class="column is-half">
+        <article class="impact-item">
+         <h3 class="title is-5 is-family-primary">
+          Anpassbare Abläufe
+         </h3>
+         <p>
+          Zusätzliche Angaben und eine alternative Auslieferung ließen sich ergänzen, als neue Anforderungen entstanden.
+         </p>
+        </article>
+       </div>
+      </div>
+     </section>
+     <section class="case-section" id="soli-learnings">
+      <div class="columns is-variable is-6">
+       <div class="column is-one-third">
+        <div class="eyebrow">
+         Learnings
+        </div>
+        <h2 class="title is-4">
+         Was ich mitnehme.
+        </h2>
+       </div>
+       <div class="content column">
+        <article class="media">
+         <div class="media-content">
+          <h3>
+           <span class="marker-text">Die Übergänge entscheiden.</span>
+          </h3>
+          <p>
+           Erst das Zusammenspiel von Bedarfserfassung, Arbeitsdokumenten, Kommunikation und Übergabe machte die Lösung praktisch nutzbar. Diese Übergänge würde ich auch künftig früh erproben.
+          </p>
+         </div>
+        </article>
+        <article class="media">
+         <div class="media-content">
+          <h3>
+           <span class="marker-text">Struktur lässt Raum für Menschen.</span>
+          </h3>
+          <p>
+           Artikel, Mengen und Größen ließen sich sprachübergreifend abbilden. Persönliche Wünsche brauchten Freitext und individuelle Klärung. Gute Abläufe müssen beides ermöglichen.
+          </p>
+         </div>
+        </article>
+        <article class="media">
+         <div class="media-content">
+          <h3>
+           <span class="marker-text">Technik und Organisation zusammendenken.</span>
+          </h3>
+          <p>
+           Die verfügbare Zeit der Freiwilligen begrenzte die Hilfe. Die Einbindung des Lieferdienstes zeigte, wie wichtig es ist, den digitalen Ablauf gemeinsam mit der praktischen Organisation weiterzuentwickeln.
+          </p>
+         </div>
+        </article>
+       </div>
+      </div>
+     </section>
+     <p class="help note">
+      Bildquellen: erhaltene Formularansichten (Screenshots vom September 2026) sowie eigene Projektdokumentation und bereitgestellte Unterlagen aus 2022. Das Bestell-PDF stammt aus einer anonymisierten Beispieldokumentation.
+     </p>
+     <footer class="site-footer">
+      <span>Florian Klumb · Bonn</span>
+      <nav aria-label="Fußnavigation" class="footer-links">
+       <a href="impressum.html">Impressum</a>
+       <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+     </footer>
+    </div>
+   </main>
+   <dialog aria-labelledby="portfolio-image-caption" class="image-dialog" data-image-dialog="">
+    <div class="image-dialog__header">
+     <p data-image-caption="" id="portfolio-image-caption">
+     </p>
+     <button aria-label="Bildansicht schließen" class="button image-dialog__close" data-close-image="" type="button">
+      ×
+     </button>
+    </div>
+    <div class="image-dialog__body" data-image-scroll="">
+     <img alt=""/>
+    </div>
+   </dialog>
+  </div>
+ </body>
+</html>
